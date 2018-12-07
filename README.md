@@ -6,7 +6,7 @@ This is a Deep Learning project that implements Neural Style Transfer (transferr
 The project has two Jupyter notebooks :
 1. **neural_single_style_transfer.ipynb** : This transfers the style of one image to a given image.
 
-2. **neural_multiple_style_transfer.ipynb** : This transfers the styles of multiple images to a given image. The notebook is currently configured to transfer styles of two images to a given image but can be conveniently modeified to transfer more than two styles to a given input image.
+2. **neural_multiple_style_transfer.ipynb** : This transfers the styles of multiple images to a given image. The notebook is currently configured to transfer styles of two images to a given image but can be conveniently modified to transfer more than two styles to a given input image.
 
 ## Note
 
@@ -95,7 +95,7 @@ Following are the style images used in the given project :
 <img src="images/single-style outputs/style4  a 10 b 2500.jpg" height="260" width="400"> **ALPHA - 10 and BETA - 2500**<br> 
 <img src="images/single-style outputs/style4 a 10 b 1000.jpg" height="260" width="400"> **ALPHA - 10 and BETA - 1000**<br> 
 
-As can be seen in these images, when we decrease the value of BETA, the overpowering effect of Style image is being reduced and generated image is looking more pleasant<br> 
+As can be seen in these images, when we decrease the value of BETA, the overpowering effect of Style image is being reduced and generated image is looking more pleasant.<br> 
 <hr>
 
  ### Multiple Style Transfer
@@ -105,6 +105,8 @@ As can be seen in these images, when we decrease the value of BETA, the overpowe
 **ALPHA - 10 BETA1 - 1500 BETA2 - 1500**<br> 
 <img src="images/multi-style outputs/burnt_gold and random colors a 10 b1 2200 b2 800.jpg" height="260" width="400">
 **ALPHA - 10 BETA1 - 2200 BETA2 - 800**<br> 
+
+As is apparent from above two images when BETA1 is increased and BETA2 is decreased for the second image, style of first image increases considerably while the style of second image somewhat fades in.
 <hr>
 
 **ALPHA - 10 BETA1 - 1500 BETA2 - 15000**<br>
@@ -125,7 +127,7 @@ As can be seen in these images, when we decrease the value of BETA, the overpowe
 <img src="images/multi-style outputs/seated nude and vector landscape a 10 b1 5000 b2 1500.jpg" height="260" width="400">
 **ALPHA - 10 BETA1 - 5000 BETA2 - 1500**<br> 
 
-As can be seen in these images, when we increase the value of BETA1, the effect of First Style image increases on the final input image while the effect of Second Style image decreases.<br> 
+As can be seen in these images, when we increase the value of BETA1, the effect of First Style image increases on the final input image while the effect of second style image decreases.<br> 
 <hr>
 
  
