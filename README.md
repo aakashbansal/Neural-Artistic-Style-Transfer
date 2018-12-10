@@ -8,6 +8,36 @@ The project has two Jupyter notebooks :
 
 2. **neural_multiple_style_transfer.ipynb** : This transfers the styles of multiple images to a given image. The notebook is currently configured to transfer styles of two images to a given image but can be conveniently modified to transfer more than two styles to a given input image.
 
+Specify the path for content and style images (for single style transfer) :
+```
+# specify paths to content and style images
+CONTENT_IMG_PATH = "images/emma.jpg"
+STYLE_IMG_PATH = "images/style4.jpg"
+```
+
+Specify the path for content image and two style images (for multi style transfer) :
+```
+# specify paths to content and style images
+CONTENT_IMG_PATH = "dancing girl.jpg"
+STYLE_IMG1_PATH = "red-canna.jpg"
+STYLE_IMG2_PATH = "seated-nude.jpg"
+```
+
+Set hyperparameters ALPHA and BETA accordingly (for single style transfer):
+```
+# content and style weights for computing losses
+ALPHA = 10.0
+BETA = 3000.0
+```
+
+Set hyperparameters ALPHA, BETA1, BETA2 accordingly (for multi style transfer):
+```
+# content and style weights for computing losses
+ALPHA = 10.0
+BETA1 = 1500.0
+BETA2 = 1500.0
+```
+
 ## Note
 
 1. The notebooks were run on **GPU-accelerated** run-time of [Google Colab](https://colab.research.google.com/) where each run of about **2000 iterations** used to take nearly **10 minutes**. On a CPU, it could take about **3-4 hours** or more depending on the clock speed. So, it is preferable to run these notebooks on a GPU.
